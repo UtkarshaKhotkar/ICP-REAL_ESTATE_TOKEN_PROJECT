@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/ICP-REAL_ESTATE_TOKEN_PROJECT-backend"
+]
+resolver = "2"

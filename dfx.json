@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "dfx": "0.22.0",
+  "canisters": {
+    "property_hub": {
+      "type": "rust",
+      "candid": "canisters/property_hub/property_hub.did",
+      "package": "property_hub"
+    },
+    "frontend": {
+      "type": "assets",
+      "source": ["frontend/dist"],
+      "build": ["npm run -w frontend build"]
+    }
+  },
+  "networks": { "local": { "bind": "127.0.0.1:4943" } },
+  "defaults": { "build": { "args": "", "packtool": "" } }
+}
