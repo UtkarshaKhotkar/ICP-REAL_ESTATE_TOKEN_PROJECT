@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "src/PK_Token_backend"
+    , "src/ICP_Realestate_backend"
+]
+resolver = "2"

@@ -1,0 +1,196 @@
+.pk-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.btns button {
+    background: #ff9800;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    padding: 4px;
+    position: relative;
+    top: -30px;
+    border-radius: 12px;
+    font-size: small;
+    box-shadow: 3px 3px 13px -3px #ffa500d9;
+    transition: 0.2s ease-in-out;
+    padding-inline: 12px;
+}
+
+.card:hover button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover {
+    padding-inline: 15px;
+    padding-block: 25px;
+}
+
+.btns {
+    display: flex;
+    position: relative;
+    bottom: auto;
+    gap: 10px;
+}
+
+.card:hover .btns {
+    bottom: -12px;
+}
+
+.btns button:hover {
+    font-size: smaller;
+    box-shadow: 3px 3px 25px 0px #ffa500b8;
+}
+
+.logo-pk {
+    width: 90px;
+}
+
+.pk-nav-title {
+    text-shadow: #FC1 3px 7px 25px;
+    height: 40px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: smaller;
+    list-style: none;
+    gap: 30px;
+
+    border: 3px solid #2c2c2c;
+    border-radius: 30px;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 5px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+ul li.active {
+    background: linear-gradient(90deg, #ff9800 60%, #ff5722 100%);
+    color: #181818;
+    font-weight: bold;
+}
+
+
+
+
+ul li.active span {
+    position: relative;
+    z-index: 1;
+    color: #181818;
+    transition: color 0.2s;
+}
+
+/* From Uiverse.io by JohnnyCSilva */
+.card {
+    width: 100%;
+    max-width: 290px;
+    height: 70px;
+    background: #353535;
+    box-shadow: 6px 8px 30px #ffb02f91;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#e2e0c5, #eb8e0c);
+}
+
+.card:hover>.img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#e59b91, #713220);
+}
+
+.textBox {
+    margin-left: 15px;
+    position: relative;
+    top: 13px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover>.textBox {
+    top: 0px;
+}
+
+.textContent {
+    display: flex;
+    position: relative;
+    gap: 7px;
+    ;
+    top: 9px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span {
+    font-size: 11px;
+    color: orange;
+}
+
+
+.h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 14px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 9px;
+}
+
+.copy {
+    width: 18px;
+    padding-inline: 10px;
+}
+
+
+
+@keyframes orangeMove {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

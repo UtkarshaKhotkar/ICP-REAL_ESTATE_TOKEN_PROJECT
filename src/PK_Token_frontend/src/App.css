@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0;
+    margin-left: -30px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pk-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.pk-loading-spinner {
+    border: 6px solid rgba(255, 152, 0, 0.3);
+    border-top: 6px solid #ff9800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: pk-spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes pk-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tab-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease-in-out;
+    display: none;
+    animation: fadeSlideIn 1.4s ease both;
+}
+
+.tab-content.active {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+    overflow: auto;
+    max-height: calc(100vh - 100px);
+}
+
+.tab-content.inactive {
+    display: none;
+}
+
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Login_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.logo {
+    width: 339px;
+    position: absolute;
+    top: 145px;
+}
+
+.Login_text {
+    position: relative;
+    top: -36px;
+}
+
+.Login_card {
+    max-width: 350px;
+    width: 300px;
+    align-items: center;
+    height: 230px;
+    background-color: rgb(7 16 45);
+    background: linear-gradient(to top right, rgb(0 0 0), rgb(75 55 32));
+    background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+    border: 1px solid rgb(84 90 106);
+    position: relative;
+    top: 60px;
+}
+
+.Login_card button {
+    background: #ff9800;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+    border-radius: 12px;
+    font-size: smaller;
+    box-shadow: 3px 3px 13px #ffa500d9;
+    transition-duration: 0.3s;
+}
+
+.Login_card button:hover {
+    font-size: x-large;
+    box-shadow: 3px 3px 25px #ffa500b8;
+}

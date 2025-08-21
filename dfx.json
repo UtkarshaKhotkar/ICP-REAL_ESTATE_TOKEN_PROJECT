@@ -1,0 +1,31 @@
+{
+  "canisters": {
+    "PK_Token_backend": {
+      "candid": "src/PK_Token_backend/PK_Token_backend.did",
+      "package": "PK_Token_backend",
+      "type": "rust"
+    },
+    "ICP_Realestate_backend": {
+      "candid": "src/ICP_Realestate_backend/ICP_Realestate_backend.did",
+      "package": "ICP_Realestate_backend",
+      "type": "rust"
+    },
+    "PK_Token_frontend": {
+      "dependencies": [
+        "PK_Token_backend",
+        "ICP_Realestate_backend"
+      ],
+      "source": ["src/PK_Token_frontend/dist"],
+      "type": "assets",
+      "workspace": "PK_Token_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

@@ -1,0 +1,99 @@
+.re-box {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: rgba(12, 12, 12, 0.8);
+    border: 1px solid rgba(255, 153, 0, 0.25);
+    border-radius: 14px;
+    padding: 16px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.08);
+}
+
+.re-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 153, 0, 0.2);
+}
+
+.re-balance span,
+.accent {
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.re-section {
+    margin-top: 16px;
+}
+
+.re-form {
+    display: grid;
+    gap: 8px;
+}
+
+.re-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.re-input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.re-btn {
+    background: #ff9800;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 153, 0, 0.35);
+}
+
+.re-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.re-table th,
+.re-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.re-table thead {
+    background: rgba(255, 153, 0, 0.12);
+}
+
+.re-table tbody tr+tr {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.re-thumb-sm {
+    width: 48px;
+    height: 36px;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+}
+
+.re-thumb-sm.broken {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.re-buycell {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+}

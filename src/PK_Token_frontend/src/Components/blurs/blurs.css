@@ -1,0 +1,67 @@
+.blurs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.blur1 {
+    position: absolute;
+    top: 13%;
+    left: -12%;
+    width: 50%;
+    height: 60%;
+    background: #ffa50073;
+    filter: blur(120px);
+    z-index: -1;
+    animation: moveblur1 2s linear infinite;
+}
+
+.blur2 {
+    position: absolute;
+    top: 57%;
+    left: 55%;
+    width: 50%;
+    height: 60%;
+    background: #ff7a0073;
+    filter: blur(100px);
+    z-index: -1;
+    animation: moveblur2 4s linear infinite;
+}
+
+@keyframes moveblur1 {
+
+    0%,
+    100% {
+        top: 10%;
+        left: -12%;
+
+    }
+
+    50% {
+        top: 17%;
+        left: -10%;
+
+    }
+
+}
+
+@keyframes moveblur2 {
+
+    0%,
+    100% {
+        top: 50%;
+        left: 56%;
+
+    }
+
+    50% {
+        top: 40%;
+        left: 60%;
+
+    }
+
+}

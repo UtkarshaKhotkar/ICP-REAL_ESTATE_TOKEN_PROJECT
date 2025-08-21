@@ -1,0 +1,27 @@
+type Result = variant { Ok : text; Err : TokenError };
+type TokenError = variant {
+  InvalidAmount;
+  InsufficientBalance;
+  Unauthorized;
+  Other : text;
+};
+type Transaction = record {
+  to : opt principal;
+  from : opt principal;
+  timestamp : nat64;
+  tx_type : text;
+  amount : nat64;
+};
+service : {
+  get_all_transactions : () -> (vec Transaction) query;
+  get_balance_of : (principal) -> (nat64) query;
+  get_my_balance : () -> (nat64) query;
+  get_my_principal : () -> (text) query;
+  get_my_transactions : () -> (vec Transaction) query;
+  get_total_supply : () -> (nat64) query;
+  greet : (text) -> (text) query;
+  mine_tokens : (nat64) -> (Result);
+  sell_tokens : (nat64) -> (Result);
+  send_tokens : (principal, nat64) -> (Result);
+  whoami : () -> (principal) query;
+}
